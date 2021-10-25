@@ -12,9 +12,9 @@ namespace Persistence
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Value>().HasData(
-                new Value { Id = 1, Name = "Lizette Munoz" },
-                new Value { Id = 5, Name = "Halle" },
-                new Value { Id = 12, Name = "Brewski" }
+                new Value { Id = 1, Name = "Lizette Munoz", Country ="Costa Rica" },
+                new Value { Id = 5, Name = "Halle" , Country = "Japan" },
+                new Value { Id = 12, Name = "Brewski", Country = "Greece" }
             );
         }
 

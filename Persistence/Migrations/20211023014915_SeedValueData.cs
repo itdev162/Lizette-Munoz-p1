@@ -8,18 +8,18 @@ namespace Persistence.Migrations
         {
             migrationBuilder.InsertData(
                 table: "Values",
-                columns: new[] { "Id", "Name" },
-                values: new object[] { 1, "Lizette Munoz" });
+                columns: new[] { "Id", "Name","Country" },
+                values: new object[] { 1, "Lizette Munoz","Costa Rica" });
 
             migrationBuilder.InsertData(
                 table: "Values",
-                columns: new[] { "Id", "Name" },
-                values: new object[] { 5, "Halle" });
+                columns: new[] { "Id", "Name","Country" },
+                values: new object[] { 5, "Halle", "Japan"});
 
             migrationBuilder.InsertData(
                 table: "Values",
-                columns: new[] { "Id", "Name" },
-                values: new object[] { 12, "Brewski" });
+                columns: new[] { "Id", "Name","Country" },
+                values: new object[] { 12, "Brewski", "Greece" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
