@@ -10,11 +10,13 @@ namespace API.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private const string V = "Travel log3";
+
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "Travel Log 1:", "Travel Log 2:" };
+            return new string[] { "Travel Log 1:", "Travel Log 2:", "Travel Log 3" };
         }
 
         // GET api/values/5
